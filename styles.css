@@ -26,9 +26,16 @@ ul{
     text-align: center;
 }
 
+.image1{
+    display: center;
+    height: 900px;
+    width: 1924px;
+}
+
 .main-body{
     height: 100vh;
     background-color: darkgrey;
+    
 }
 
 footer{
