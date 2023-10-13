@@ -1,7 +1,7 @@
 .link-button{
     display:inline-block;
-    margin: 1vh 1vh 0 3vh;
-    font-size: 35px;
+    margin: 1vh 1vh 0 0vh;
+    font-size: 30px;
     position: relative;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: rgb(255, 255, 255);
@@ -399,4 +399,70 @@ footer{
     color:white;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size:25px;
+}
+
+.contactbody{
+    padding-bottom:4vh;
+    margin-top: 2vh;
+    background:linear-gradient(
+        135deg,
+        rgb(0, 82, 0) 0%,
+        rgb(0,82,0) 52.1%,
+        gray 33%,
+        gray 100%
+    );
+}
+
+#gridbody{
+    margin-left:50px;
+    margin-top:25px;
+    margin-right: 50px;
+    /* border:1px solid red; */
+    display:grid;
+    grid-template-columns:repeat(3, 1fr); 
+    grid-template-rows:repeat(2, 400px);
+    grid-gap: 20px;
+    grid-template-areas:
+    "name email ."
+    "message message ."
+}
+
+#contact{
+    padding-top:3vh;
+    color:white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:35px;
+    padding-left:3vh;
+    text-align:left;
+    text-decoration:underline;
+}
+
+#namefield{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:25px;
+    grid-area:name;
+    padding-left:1vh;
+    border-left:1px solid white;
+    border-bottom:1px solid white;
+    color:white;
+}
+
+#email{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:25px;
+    grid-area:email;
+    padding-left:1vh;
+    border-left:1px solid white;
+    border-bottom:1px solid white;
+    color:white;
+}
+
+#message{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:25px;
+    grid-area:message;
+    padding-left:1vh;
+    border-left:1px solid white;
+    border-bottom:1px solid white;
+    color:white;
 }
